@@ -1,0 +1,21 @@
+negative_context_terms:
+  - "wedding ring"
+  - "ring road"
+  - "ring buffer"
+  - "ring oscillator"
+  - "ring signature"
+  - "ring topology"
+  - "orc file"
+  - "apache orc"
+  - "orc format"
+  - "elf binary"
+  - "elf file"
+  - "executable and linkable format"
+  - "ear nose throat"
+  - "entropy"
+  - "enterprise"
+  - "shire county"
+  - "palantir technologies"
+
+hard_reject_domains:
+  - "example.com"

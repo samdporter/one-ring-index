@@ -1,0 +1,2 @@
+[console_scripts]
+lotr-index = lotr_index.cli:main

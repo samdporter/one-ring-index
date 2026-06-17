@@ -1,0 +1,121 @@
+high_precision:
+  gandalf:
+    entity: "Gandalf"
+    weight: 1.00
+    aliases: ["gandalf"]
+  frodo:
+    entity: "Frodo"
+    weight: 1.00
+    aliases: ["frodo"]
+  samwise:
+    entity: "Samwise Gamgee"
+    weight: 1.00
+    aliases: ["samwise", "sam"]
+  legolas:
+    entity: "Legolas"
+    weight: 1.00
+    aliases: ["legolas"]
+  gimli:
+    entity: "Gimli"
+    weight: 1.00
+    aliases: ["gimli"]
+  gollum:
+    entity: "Gollum"
+    weight: 1.00
+    aliases: ["gollum", "smeagol", "sméagol"]
+  sauron:
+    entity: "Sauron"
+    weight: 1.00
+    aliases: ["sauron"]
+  saruman:
+    entity: "Saruman"
+    weight: 1.00
+    aliases: ["saruman"]
+  aragorn:
+    entity: "Aragorn"
+    weight: 1.00
+    aliases: ["aragorn", "strider"]
+  rivendell:
+    entity: "Rivendell"
+    weight: 1.00
+    aliases: ["rivendell"]
+  mordor:
+    entity: "Mordor"
+    weight: 1.00
+    aliases: ["mordor"]
+  balrog:
+    entity: "Balrog"
+    weight: 0.95
+    aliases: ["balrog"]
+  mithril:
+    entity: "Mithril"
+    weight: 0.95
+    aliases: ["mithril"]
+  palantir:
+    entity: "Palantír"
+    weight: 0.95
+    aliases: ["palantir", "palantír"]
+  silmaril:
+    entity: "Silmaril"
+    weight: 0.95
+    aliases: ["silmaril", "silmarils"]
+
+medium_precision:
+  bilbo:
+    entity: "Bilbo Baggins"
+    weight: 0.85
+    aliases: ["bilbo"]
+  arwen:
+    entity: "Arwen"
+    weight: 0.85
+    aliases: ["arwen"]
+  elrond:
+    entity: "Elrond"
+    weight: 0.85
+    aliases: ["elrond"]
+  galadriel:
+    entity: "Galadriel"
+    weight: 0.85
+    aliases: ["galadriel"]
+  rohan:
+    entity: "Rohan"
+    weight: 0.80
+    aliases: ["rohan"]
+  gondor:
+    entity: "Gondor"
+    weight: 0.80
+    aliases: ["gondor"]
+  shire:
+    entity: "The Shire"
+    weight: 0.70
+    aliases: ["shire", "the shire"]
+
+low_precision:
+  ring:
+    entity: "The One Ring"
+    weight: 0.30
+    aliases: ["ring", "one ring", "the one ring"]
+  orc:
+    entity: "Orc"
+    weight: 0.25
+    aliases: ["orc", "orcs"]
+  elf:
+    entity: "Elf"
+    weight: 0.20
+    aliases: ["elf", "elves", "elven"]
+  ent:
+    entity: "Ent"
+    weight: 0.20
+    aliases: ["ent", "ents"]
+
+confirmation_terms:
+  - "lord of the rings"
+  - "lotr"
+  - "tolkien"
+  - "middle-earth"
+  - "middle earth"
+  - "hobbit"
+  - "shire"
+  - "mordor"
+  - "one ring"
+  - "fellowship"
