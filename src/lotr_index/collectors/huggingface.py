@@ -11,7 +11,7 @@ from ..normalize import evidence_window, stable_id
 log = logging.getLogger(__name__)
 
 
-def collect(terms: dict, days_back: int = 3, max_results: int = 20) -> list[Candidate]:
+def collect(terms: dict, days_back: int = 3, max_results: int = 50) -> list[Candidate]:
     del days_back
     api = HfApi(token=os.getenv("HF_TOKEN") or None)
     results: list[Candidate] = []

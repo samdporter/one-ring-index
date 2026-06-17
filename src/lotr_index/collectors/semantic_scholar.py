@@ -12,7 +12,7 @@ log = logging.getLogger(__name__)
 S2_SEARCH = "https://api.semanticscholar.org/graph/v1/paper/search"
 
 
-def collect(terms: dict, days_back: int = 3, max_results: int = 20) -> list[Candidate]:
+def collect(terms: dict, days_back: int = 3, max_results: int = 50) -> list[Candidate]:
     del days_back
     headers: dict[str, str] = {}
     key = os.getenv("SEMANTIC_SCHOLAR_API_KEY")

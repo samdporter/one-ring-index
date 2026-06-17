@@ -29,7 +29,7 @@ def _guess_artifact_type(text: str) -> str:
     return "paper"
 
 
-def collect(terms: dict, days_back: int = 3, max_results: int = 20) -> list[Candidate]:
+def collect(terms: dict, days_back: int = 3, max_results: int = 50) -> list[Candidate]:
     del days_back
     results: list[Candidate] = []
     contact = os.getenv("CONTACT_EMAIL", "unknown@example.com")

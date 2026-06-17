@@ -12,7 +12,7 @@ log = logging.getLogger(__name__)
 CROSSREF_WORKS = "https://api.crossref.org/works"
 
 
-def collect(terms: dict, days_back: int = 3, max_results: int = 20) -> list[Candidate]:
+def collect(terms: dict, days_back: int = 3, max_results: int = 50) -> list[Candidate]:
     del days_back
     contact = os.getenv("CONTACT_EMAIL", "unknown@example.com")
     results: list[Candidate] = []

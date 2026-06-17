@@ -11,7 +11,7 @@ log = logging.getLogger(__name__)
 ZENODO_RECORDS = "https://zenodo.org/api/records"
 
 
-def collect(terms: dict, days_back: int = 3, max_results: int = 20) -> list[Candidate]:
+def collect(terms: dict, days_back: int = 3, max_results: int = 50) -> list[Candidate]:
     del days_back
     results: list[Candidate] = []
     for key, meta in terms.items():

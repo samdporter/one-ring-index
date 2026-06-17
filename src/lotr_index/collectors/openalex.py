@@ -12,7 +12,7 @@ log = logging.getLogger(__name__)
 OPENALEX_WORKS = "https://api.openalex.org/works"
 
 
-def collect(terms: dict, days_back: int = 3, max_results: int = 20) -> list[Candidate]:
+def collect(terms: dict, days_back: int = 3, max_results: int = 50) -> list[Candidate]:
     del days_back
     api_key = os.getenv("OPENALEX_API_KEY")
     if not api_key:

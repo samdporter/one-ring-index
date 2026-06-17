@@ -9,7 +9,7 @@ from ..normalize import evidence_window, stable_id
 log = logging.getLogger(__name__)
 
 
-def collect(terms: dict, days_back: int = 3, max_results: int = 20) -> list[Candidate]:
+def collect(terms: dict, days_back: int = 3, max_results: int = 50) -> list[Candidate]:
     del days_back, max_results
     results: list[Candidate] = []
     variants = ["", "-ml", "-ai", "-torch", "-pytorch", "-llm"]
