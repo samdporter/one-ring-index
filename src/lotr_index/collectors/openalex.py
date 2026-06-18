@@ -15,18 +15,16 @@ OPENALEX_WORKS = "https://api.openalex.org/works"
 def collect(terms: dict, days_back: int = 3, max_results: int = 50) -> list[Candidate]:
     del days_back
     api_key = os.getenv("OPENALEX_API_KEY")
-    if not api_key:
-        log.info("OPENALEX_API_KEY not set; skipping OpenAlex")
-        return []
 
     results: list[Candidate] = []
     for key, meta in terms.items():
         for alias in meta.get("aliases", [key])[:2]:
-            params = {
+            params: dict = {
                 "search": f"{alias} machine learning deep learning neural software benchmark dataset",
                 "per-page": min(max_results, 25),
-                "api_key": api_key,
             }
+            if api_key:
+                params["api_key"] = api_key
             try:
                 data = get_json(OPENALEX_WORKS, params=params, cache_namespace="openalex")
             except Exception as exc:
