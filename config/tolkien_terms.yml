@@ -10,7 +10,7 @@ high_precision:
   samwise:
     entity: "Samwise Gamgee"
     weight: 1.00
-    aliases: ["samwise", "sam"]
+    aliases: ["samwise"]
   legolas:
     entity: "Legolas"
     weight: 1.00
